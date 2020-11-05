@@ -25,8 +25,15 @@ const handleUserInput = function() {
     console.log(key);
 
     if (key === 'w') {
-      //connection.stdin.write('up');
       connection.write('Move: up');
+    } else if (key === 's') {
+      connection.write('Move: down');
+    } else if (key === 'd') {
+      connection.write('Move: right');
+    } else if (key === 'a') {
+      connection.write('Move: left');
+    } else if (key === 'p') {
+      connection.write('Say: hewo uwu');
     }
   });
   
